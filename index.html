@@ -479,10 +479,7 @@ async function callGeminiAPI(payload, loadingElement) {
 
     // !!! QUAN TRỌNG: Dán API Key của bạn vào đây
     // Lấy key từ: https://aistudio.google.com/app/apikey
-    const apiKey = "AIzaSyCrl3xIwKX87e0YlzzlImCvOtQPoHQvUs8"; 
-    const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
-    
-    try {
+        try {
         const response = await fetch(apiUrl, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
