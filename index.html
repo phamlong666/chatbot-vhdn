@@ -480,9 +480,9 @@ async function callGeminiAPI(payload, loadingElement) {
     // !!! QUAN TRỌNG: Dán API Key của bạn vào đây
     // Lấy key từ: https://aistudio.google.com/app/apikey
 	const GEMINI_API_URL =
-	"https://chatbot-vhdn.vercel.app/";
+	"https://chatbot-vhdn.vercel.app/api/chat";
         try {
-        const response = await fetch(apiUrl, {
+        const response = await fetch(GEMINI_API_URL, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload)
